@@ -8,6 +8,9 @@ date: 2019-05-30 16:14:09
 ---
 
 ```sql
+-- 查看用户
+SELECT * FROM mysql.user;
+
 -- 创建用户
 CREATE USER '用户名'@'访问主机' IDENTIFIED BY '密码';
 
@@ -19,4 +22,7 @@ GRANT ALL PRIVILEGES ON *.* TO '用户名'@'访问主机' ;
 
 -- 修改权限
 GRANT 权限列表 on 数据库 to '用户名'@'访问主机' WITH GRANT OPTION;
+
+-- 刷新权限
+flush privileges;
 ```
