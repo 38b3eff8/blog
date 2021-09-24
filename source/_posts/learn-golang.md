@@ -273,7 +273,7 @@ for sum < 1000 {
 
 ```golang
 for true {
-
+  for statment
 }
 
 // true 可省略
